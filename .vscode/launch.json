@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "http://--inspect",
+      "request": "launch",
+      "url": "http://--inspect"
+    }
+  ]
+}

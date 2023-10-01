@@ -1,0 +1,526 @@
+.main-Tickets {
+  display: flex;
+  justify-content: center;
+  color: #142c54;
+}
+.Tickets {
+  margin: 10px;
+  margin-top: 50px;
+  outline: 1px solid #f4f4f4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 5px;
+  padding-bottom: 20px;
+}
+
+.Tickets-title {
+  align-items: center;
+  margin: 0px 10px;
+}
+.Tickets-title > h1 {
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.Tickets > h2 {
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: #828282;
+}
+.Tickets-lists {
+  margin-top: 20px;
+}
+.Tickets-header-list {
+  display: flex;
+  list-style: none;
+  background-color: gainsboro;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.Tickets-header-list > li {
+  margin: 10px;
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.Tickets-data-list {
+  display: flex;
+  list-style: none;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.Tickets-data-list > li {
+}
+
+.Ticket-status:hover {
+  opacity: 79%;
+}
+.Ticket-status {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  color: white;
+}
+.Ticket-view {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background-color: white;
+  border: 1px solid black;
+  outline: none;
+  text-decoration: none;
+}
+.Ticket-view:hover {
+  background-color: gainsboro;
+}
+.Tickets-loading {
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+}
+.Tickets-loading > h1 {
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: #142c54;
+}
+.Tickets-none-icon {
+  font-size: 130px;
+}
+@media only screen and (min-width: 768px) {
+  .Tickets-date {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    width: 200px;
+  }
+  .Tickets-product {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+
+    min-width: 200px;
+  }
+
+  .tickets-btns {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .Tickets-title > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Tickets-date {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    width: 150px;
+  }
+  .Tickets-product {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+
+    width: 150px;
+  }
+
+  .tickets-btns {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .Tickets-title > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Tickets-date {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    width: 120px;
+  }
+  .Tickets-product {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+
+    width: 120px;
+  }
+
+  .tickets-btns {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 120px;
+  }
+  .Ticket-status {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+
+    color: white;
+  }
+  .Ticket-view {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    text-decoration: none;
+  }
+  .Tickets-loading {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .Tickets-title > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Tickets-date {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    width: 120px;
+  }
+  .Tickets-product {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+
+    width: 120px;
+  }
+
+  .tickets-btns {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 120px;
+  }
+  .Ticket-status {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+
+    color: white;
+  }
+  .Ticket-view {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    text-decoration: none;
+  }
+  .Tickets-loading {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 200px) {
+  .Tickets {
+    margin: 0px;
+    margin-top: 20px;
+    width: 97%;
+  }
+
+  .Tickets-title > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .Tickets-date {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100px;
+  }
+  .Tickets-product {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100px;
+  }
+  .Tickets-data-list {
+  }
+  .tickets-btns {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100px;
+  }
+  .Ticket-status {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+
+    color: white;
+  }
+  .Ticket-view {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+/* @media only screen and (max-width: 379px) {
+  .Tickets {
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .Tickets-title > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .Tickets-date {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .Tickets-product {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    width: 150px;
+  }
+  .Tickets-data-list {
+  }
+  .tickets-btns {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 80px;
+  }
+  .Ticket-status {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    
+    color: white;
+   
+  }
+  .Ticket-view {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    text-decoration: none;
+  }
+} */

@@ -1,0 +1,203 @@
+/*  */
+.main-one-ticket {
+  display: flex;
+  justify-content: center;
+  color: #142c54;
+}
+.one-ticket {
+  margin: 10px;
+  margin-top: 50px;
+  outline: 1px solid #f4f4f4;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  border-radius: 10px;
+  width: 700px;
+}
+.ticket-loading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 99;
+  height: 426px;
+}
+.one-ticket-titles {
+  display: flex;
+  margin: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.one-ticket-titles > h1 {
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.one-ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid navy;
+  border-bottom: 1px solid navy;
+}
+.one-ticket-info {
+  list-style: none;
+}
+.one-ticket-info > li {
+  display: flex;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.one-ticket-label {
+  font-size: 20px;
+  color: #828282;
+}
+.one-ticket-text {
+  font-size: 20px;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+.one-ticket-label2 {
+  font-size: 15px;
+  color: #828282;
+}
+.one-ticket-text2 {
+  font-size: 15px;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+.one-ticket-status-box {
+}
+
+.one-ticket-boxes {
+  border-top: 1px dotted black;
+}
+.one-ticket-active {
+  background-color: #04fc04;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.one-ticket-reject {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.one-ticket-close {
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.one-ticket-panding {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.one-ticket-body {
+  margin-top: 10px;
+}
+.OT-stage {
+  flex-direction: column;
+}
+.OT-stage-btn-box {
+}
+.OT-stage-comment {
+  margin: 0px 15px;
+}
+.OT-stage-comment > h1 {
+  font-size: 17px;
+  margin-left: 5px;
+}
+.ticket-close-box {
+  margin: 10px;
+}
+.ticktet-font {
+  font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+  .ticket-column {
+    flex-direction: column;
+  }
+  .one-ticket {
+    margin: 10px;
+    margin-top: 50px;
+    outline: 1px solid #f4f4f4;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: white;
+    border-radius: 10px;
+    width: 98%;
+  }
+  .one-ticket-titles > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+  .one-ticket-info > li {
+    display: block;
+    height: fit-content;
+    line-height: 1.1rem;
+  }
+  .one-ticket-label {
+    font-size: 17px;
+    color: #828282;
+  }
+  .one-ticket-text {
+    font-size: 17px;
+    flex-grow: 1;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .ticket-column {
+    flex-direction: column;
+  }
+  .one-ticket {
+    margin: 10px;
+    margin-top: 20px;
+    outline: 1px solid #f4f4f4;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: white;
+    border-radius: 10px;
+    width: 98%;
+  }
+  .one-ticket-titles > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+  .one-ticket-info > li {
+    display: block;
+    height: fit-content;
+    line-height: 1.1rem;
+  }
+  .one-ticket-label {
+    font-size: 17px;
+    color: #828282;
+  }
+  .one-ticket-text {
+    font-size: 17px;
+    flex-grow: 1;
+    margin-left: 5px;
+  }
+  .OT-stage-comment > h1 {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .ticktet-font {
+    font-size: 15px;
+  }
+}

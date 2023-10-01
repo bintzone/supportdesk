@@ -1,0 +1,97 @@
+.main-new-Thicket {
+  display: flex;
+  justify-content: center;
+  color: #142c54;
+}
+
+.new-Ticket {
+  margin: 10px;
+  margin-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 5px;
+  outline: 1px solid #142c54;
+  position: relative;
+}
+.my-tickets-loading {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.new-ticket-back {
+  position: absolute;
+  width: 97%;
+  display: flex;
+  justify-content: flex-end;
+}
+.new-Ticket > h1 {
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.new-Ticket > h2 {
+  text-transform: capitalize;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  color: #828282;
+}
+.NT-boxes {
+  width: fit-content;
+}
+.NT-boxes-solo {
+  width: 100%;
+  display: flex;
+}
+.all-NT-input-solo {
+}
+textarea {
+  resize: none;
+  height: 60px;
+}
+.new-Ticket-btn-box {
+  margin: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .NT-box {
+    width: 200px;
+  }
+
+  .NT-box-solo {
+    flex-grow: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .new-Ticket {
+    margin: 10px;
+    outline: 1px solid #142c54;
+    width: 98%;
+  }
+  .NT-boxes {
+    flex-direction: column;
+    width: 100%;
+  }
+  .NT-box {
+  }
+  .all-NT-input {
+  }
+  .new-Ticket > h1 {
+    text-transform: capitalize;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .NT-boxes-solo {
+    width: 100%;
+  }
+  .NT-box-solo {
+    width: 100%;
+  }
+  .all-NT-input-solo {
+  }
+}
