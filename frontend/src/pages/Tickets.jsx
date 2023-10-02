@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../CSS/pages/tickets.css";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import ButtonBack from "../components/ButtonBack";
 import { FaFrown } from "react-icons/fa";
@@ -18,11 +18,8 @@ function Tickets() {
       toast.error(message);
     }
     dispatch(getTickets());
-  }, [dispatch, isSuccess, message]);
-  const onView = () => {};
-  // if (isLoading) {
-  //   return <Spinner />;
-  // }
+  }, [dispatch, isError, isSuccess, message]);
+
   return (
     <div className="main-Tickets">
       <div className="m-Tickets">

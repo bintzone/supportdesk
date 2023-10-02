@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../CSS/pages/home.css";
 import { FaQuestionCircle, FaTicketAlt } from "react-icons/fa";
 function Home() {

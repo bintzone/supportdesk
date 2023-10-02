@@ -18,32 +18,11 @@ const login = async (userData) => {
   return response.data;
 };
 
-const updatelogin = async (userData) => {
-  const response = await axios.post(API_URL2, userData);
-  if (response.data) {
-    localStorage.setItem("Token", JSON.stringify(response.data.token));
-  }
-  return response.data;
-};
-const update = async (ticketId, Data, token) => {
-  const config = {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  };
-  const response = await axios.put(API_URL + ticketId, Data, config);
-  if (response.data) {
-    localStorage.setItem("user", JSON.stringify(response.data));
-  }
-  return response.data;
-};
 const logout = () => localStorage.removeItem("user");
 const authService = {
   register,
   login,
   logout,
-  update,
-  updatelogin,
 };
 
 export default authService;

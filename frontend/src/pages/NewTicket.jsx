@@ -9,7 +9,6 @@ import ButtonSpinner from "../assets/ButtonSpinner";
 import { createTicket, reset } from "../features/tickets/ticketSlice";
 import { toast } from "react-toastify";
 function NewTicket() {
-  const [dob, setDob] = useState("");
   const { isLoading, isSuccess, isError, message } = useSelector(
     (state) => state.ticket
   );
@@ -37,34 +36,18 @@ function NewTicket() {
       toast.error(message);
     }
     if (isSuccess) {
-      clearForm();
       navig("/tickets");
     }
     dispatch(reset());
-  }, [isError, isSuccess, message]);
-  const clearForm = () => {
-    setFormData({
-      product: "",
-      purchase_date: "",
-      serial: "",
-      problem: "",
-      note: "",
-    });
-  };
+  }, [dispatch, navig, isError, isSuccess, message]);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const year = dob.substr(0, 4);
-    const month = dob.substr(5, 2);
-    const day = dob.substr(8, 2);
-    const setDate = day + "/" + month + "/" + year;
-    formData.purchase_date = setDate;
-    console.log(formData.purchase_date);
+
     dispatch(
       createTicket({
         product,
         problem,
-        purchase_date,
         serial,
         note,
       })
@@ -118,9 +101,9 @@ function NewTicket() {
               <input
                 type="date"
                 className="all-form-input all-H-25px all-fz-18px all-NT-input"
-                onChange={(e) => setDob(e.target.value)}
-                value={dob}
-                id=" purchase_date"
+                onChange={onChange}
+                value={purchase_date}
+                id="purchase_date"
                 required
               />
             </div>

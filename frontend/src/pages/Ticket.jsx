@@ -22,7 +22,7 @@ function Ticket() {
       navigate("/tickets");
     }
     dispatch(getTicket(params.id));
-  }, [isSuccess, message]);
+  }, [dispatch, isError, params.id, navigate, isSuccess, message]);
   const onCloseTicket = () => {
     dispatch(closeTicket(params.id));
   };

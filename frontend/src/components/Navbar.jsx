@@ -1,17 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../CSS/navbar/navbar.css";
-import { useDispatch, useSelector } from "react-redux";
-import { FaSignInAlt, FaUserAlt } from "react-icons/fa";
+import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
+import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 function Navbar() {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
-  // const onLogout = () => {
-  //   dispatch(logout());
-  //   dispatch(reset());
-  //   navigate("/");
-  // };
+  const dispatch = useDispatch();
+  const onLogout = () => {
+    dispatch(logout());
+    dispatch(reset());
+    navigate("/");
+  };
   return (
     <div className="main-navbar">
       <div className="navbar-logo">
@@ -27,15 +27,11 @@ function Navbar() {
             Sing-in
           </Link>
         ) : (
-          <Link to="/profile" className="navbar-btn">
-            <FaUserAlt className="nav-profile-icon" />
-            profile
-          </Link>
-        )}
-        {/* <div className="navbar-btn" onClick={onLogout}>
+          <Link to="/" className="navbar-btn" onClick={onLogout}>
             <FaSignOutAlt />
             Logout
-          </div> */}
+          </Link>
+        )}
       </div>
     </div>
   );

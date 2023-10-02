@@ -1,30 +1,24 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useEffect, useState } from "react";
 // import back from "../assets/background.jpg";
 import "../CSS/pages/Login.css";
 import { toast } from "react-toastify";
 import { FaEyeSlash, FaEye } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import LoginSpinner from "../assets/LoginSpinner";
 import Kspinner from "../assets/Kspinner";
 import { useSelector, useDispatch } from "react-redux";
 import { login, reset } from "../features/auth/authSlice";
-import { set } from "mongoose";
+
 function LogIn() {
   const dispatch = useDispatch();
   const { user, isLoading, isSuccess, isError, message } = useSelector(
     (state) => state.auth
   );
   const navigate = useNavigate();
-  const [One, setOne] = useState(false);
   const [show, setShow] = useState(false);
-  const [two, setTwo] = useState(false);
-  const [three, setThree] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-  const [loading, setLoading] = useState(false);
-  const [setting, setSetting] = useState(false);
   const { email, password } = formData;
   useEffect(() => {
     if (isError) {
@@ -35,7 +29,7 @@ function LogIn() {
       // toast.success("User created seccessfully");
     }
     dispatch(reset());
-  }, [isLoading, isSuccess, isError, message]);
+  }, [dispatch, navigate, user, isLoading, isSuccess, isError, message]);
   const onForm = (e) => {
     setFormData((perv) => ({
       ...perv,
